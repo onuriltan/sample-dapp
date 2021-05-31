@@ -24,6 +24,10 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337 // ETH Testntet
+    }, 
+    ropsten: {
+      url: 'https://ropsten.infura.io/v3/b2ccfa6c01214dcbaa23bcc2efee2840',
+      accounts: [`0x${process.env.ACCOUNT_PRIVATE_KEY}`]
     }
   }
 };
