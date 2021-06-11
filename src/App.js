@@ -7,6 +7,7 @@ import TokenContract from "./artifacts/contracts/Token.sol/Token.json";
 const greeterContractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3";
 const tokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
 
+
 const App = () => {
   const [greeting, setGreetingValue] = useState('');
   const [userAccount, setUserAccount] = useState('');
@@ -84,7 +85,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <button onClick={fetchGreeting}>Fetch Greeting</button>
+        <button onClick={fetchGreeting}>Fetch Greeting</button>
       <button onClick={setGreeting}>Set Greeting </button>
       <input
         onChange={(e) => setGreetingValue(e.target.value)}
